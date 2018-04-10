@@ -2,7 +2,7 @@ cask 'java7' do
   version '1.7.0_80'
   sha256 :no_check
 
-  url 'file:///Users/kguryev/Downloads/jdk-7u80-macosx-x64.dmg',
+  url 'file:///Users/Guest/jdk7/jdk-7u80-macosx-x64.dmg',
       :cookies => {
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
