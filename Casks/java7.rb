@@ -29,7 +29,7 @@ cask 'java7' do
   end
   uninstall :pkgutil => 'com.oracle.jdk7u80',
             :delete => '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
-  caveats <<-EOS.undent
+  caveats <<~EOS
     This Cask makes minor modifications to the JRE to prevent any packaged
     application issues.
     If your Java application still asks for JRE installation, you might need to
