@@ -7,9 +7,8 @@ cask 'java7' do
                     'oraclelicense' => 'accept-securebackup-cookie'
                   }
   homepage 'http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'
-  license :unknown
 
-  pkg 'JavaForOSX.pkg'
+  pkg 'JDK 7 Update 80.pkg'
   postflight do
     system '/usr/bin/sudo', '-E', '--',
       '/usr/libexec/PlistBuddy', '-c', 'Add :JavaVM:JVMCapabilities: string BundledApp', "/Library/Java/JavaVirtualMachines/jdk#{version}.jdk/Contents/Info.plist"
